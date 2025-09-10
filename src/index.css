@@ -1,0 +1,23 @@
+@import "tailwindcss";
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+@keyframes radiate-purple {
+   0%, 100% {
+    box-shadow: 0 0 6px rgba(168, 85, 247, 0.8),
+                0 0 12px rgba(168, 85, 247, 0.6),
+                0 0 18px rgba(168, 85, 247, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(168, 85, 247, 1),
+                0 0 20px rgba(168, 85, 247, 0.7),
+                0 0 28px rgba(168, 85, 247, 0.5);
+  }
+}
+.animate-glow-purple {
+  animation: radiate-purple 2s infinite ease-in-out;
+}
