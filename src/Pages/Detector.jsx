@@ -1,9 +1,9 @@
 import React from 'react'
 import ConnectionStatus from '../components/ConnectionStatus'
-import Chatbox from '../components/Transmitter'
 import { getdevice } from '../utils/serial'
 import { useState, useEffect } from 'react'
 import Receiver from '../components/Receiver'
+import Transmitter from '../components/Transmitter'
 const Detector = () => {
     const [device, setdevice] = useState("");
 
@@ -26,7 +26,7 @@ const Detector = () => {
             <button onClick={toggleDevice} className="px-4 py-2 rounded-md bg-purple-600 hover:bg-purple-700">
         Switch to {device === "Transmitter" ? "Receiver" : "Transmitter"}
       </button>
-            {device === "Transmitter" && <Chatbox />}
+            {device === "Transmitter" && <Transmitter />}
             {device === "Receiver" && <Receiver />}
         </div>
     )

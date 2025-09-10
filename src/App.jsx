@@ -9,7 +9,7 @@ const App = () => {
     <div className='flex flex-col bg-gradient-to-r from-black via-gray-900 to-[#1a1a1a] min-h-[100vh]'>
       <Navbar/>
       <Routes>
-        <Route path='/' element={<Detector/>}/>
+        <Route path='/Error-Detector/' element={<Detector/>}/>
       </Routes>
     </div>
   )
