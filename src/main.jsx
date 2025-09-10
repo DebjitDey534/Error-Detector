@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import { MessageProvider } from './context/MessageContext.jsx'
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/Error-Detector/">
     <MessageProvider>
       <App/>
     </MessageProvider>
