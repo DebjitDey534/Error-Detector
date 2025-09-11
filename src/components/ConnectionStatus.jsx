@@ -38,7 +38,7 @@ const ConnectionStatus = () => {
       )}
     </span>
 
-    <p>{isconnected ? "Device Connected " : "Device Not Connected"}</p>
+    <p className='hidden sm:block'>{isconnected ? "Device Connected " : "Device Not Connected"}</p>
     <p>{device}</p>
   </div>
 );
